@@ -7,6 +7,51 @@
 }
 
 
+@font-face {
+  font-family: 'Roboto-M';
+  src: url(../Fonts/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-R';
+  src: url(../Fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+// font-family: 'Roboto-M', 'Sans-Serif';
+// font-family: 'Roboto-R', 'Sans-Serif';
+p{
+  font-family: "Roboto-R", sans-serif;
+  font-size: @sizes;
+  color: @font-black;
+}
+
+h2{
+  margin-bottom: 2%;
+  font-family: 'Roboto-M', sans-Serif;
+  font-size: @sizexl;
+  text-transform: uppercase;
+  color: @font-black;
+}
+
+.lower{
+  text-transform: lowercase;
+}
+
+
+button{
+  background-color: @yellow;
+  font-family: 'Roboto-M', sans-serif;
+  color: @font-black;
+  border-radius: @radius;
+  font-size: @sizem;
+  text-transform: uppercase;
+  padding: 1% 3%;
+  margin-bottom: 7%;
+  cursor: pointer;
+}
+
+
+
+
 header{
   background-color:@yellow;
   width: 100%;
@@ -21,9 +66,13 @@ header{
       li{
         list-style-type: none;
         padding: 3%;
+        font-family: 'Roboto-M', sans-Serif;
+        font-size: @sizem;
+        color: @font-black
       }
       li:hover{
         color: @red;
+        text-transform: uppercase;
       }
     }
   }
@@ -31,6 +80,7 @@ header{
   .red{
     color: @red;
   }
+
 
 
 .top{
@@ -46,16 +96,8 @@ header{
     margin:5% 0 1%;
   }
 }
-button{
-  border-radius: @radius;
-  text-transform: uppercase;
-  background-color: @yellow;
-  color: @font-black;
-  font-size: @sizem;
-  padding: 1% 3%;
-  margin-bottom: 7%;
-  cursor: pointer;
-}
+
+
 
 .middle,
 .bottom{
@@ -64,9 +106,7 @@ button{
   width: 70%;
   padding: 3% 15%;
 
-  h2{
-    margin-bottom: 2%;
-  }
+
   article{
     width: 66%;
   }
@@ -76,13 +116,6 @@ button{
 
 }
 
-h2{
-  text-transform: uppercase;
-  .h2:();
-}
-.lower{
-  text-transform: lowercase;
-}
 
 .middle{
   img{
@@ -99,6 +132,7 @@ h2{
   }
   img{
     width: 15%;
+    height: 15%;
   }
 }
 
